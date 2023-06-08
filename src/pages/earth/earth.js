@@ -2,16 +2,15 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 
-/* function Model (props) {
-    const {scene} = useGLTF("bathroom.glb");
+function Model (props) {
+    const {scene} = useGLTF("skyHome.glb");
     return <primitive object={scene} {...props} />
 }
- */
+
 const EarthPage = () => {
     return (
         <div className="App">
-            TESTE EarthPage
-           {/*  <div className="App-header">  
+            <div className="App-header">  
                 <Canvas
                     dpr={[4,8]}
                     shadows camera={{fav:1000}}
@@ -27,7 +26,7 @@ const EarthPage = () => {
                         </Stage>
                     </PresentationControls>
                 </Canvas>
-            </div> */}
+            </div>
         </div>  
     );
 }
