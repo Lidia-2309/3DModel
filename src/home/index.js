@@ -18,8 +18,8 @@ export const Menu = () => {
     return (
         <>
             <ButtonStyle>
-                <Button color="danger" onCLick={toCube}>Cubo Giratório</Button>
-                <Button color="danger" onCLick={toEarth}>3D Model</Button>
+                <Button color="danger" onClick={toCube}>Cubo Giratório</Button>
+                <Button color="danger" onClick={toEarth}>3D Model</Button>
             </ButtonStyle>
         </>
     )
