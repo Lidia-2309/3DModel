@@ -21,8 +21,8 @@ function Cube3d (props) {
             onPointerOut={(event) => setHovered(false)}
         >
             <OrbitControls target = {[0, 0.35, 0]} maxPolarAngle={1.45}/>
-            <PerspectiveCamera makeDefault fav= {50} position={[3, 2, 5]}/>
-            <boxGeometry args={[1, 1, 1]}/>
+            <PerspectiveCamera makeDefault fav= {10} position={[3, 2, 5]}/>
+            <boxGeometry args={[2, 2, 2]}/>
             <meshStandardMaterial
                 wireframe={props.wireframe}
                 color={hovered ? "blue" : "orange"}

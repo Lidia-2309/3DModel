@@ -1,9 +1,8 @@
+import { Rotas } from "./routes";
 
 function App() {
   return (
-    <div className="App">
-     Teste1
-    </div>
+    <Rotas/>
   );
 }
 
