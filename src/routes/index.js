@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Menu from '../home/index';
+import Menu from '../pages/home';
 import CubeApp from "../pages/cube";
 import EarthPage from "../pages/earth/earth";
 
