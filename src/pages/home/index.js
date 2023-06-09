@@ -24,19 +24,22 @@ export const Menu = () => {
                     dark
                 >
                     <NavbarBrand href="/">
-                    {/* <img
+                    <img
                         alt="logo"
-                        src="/logo-white.svg"
+                        src="/Logo.png"
                         style={{
                         height: 40,
-                        width: 40
+                        width: 40,
+                        margin:15
                         }}
-                    /> */}
+                    /> 
                     Menu - Models 3D
                     </NavbarBrand>
                 </Navbar>
-                <Button color="danger" onClick={toCube}>Cubo Giratório</Button>
-                <Button color="danger" onClick={toEarth}>3D Model</Button>
+                <div className='buttons'>
+                    <Button color="danger" onClick={toCube}>Cubo Giratório</Button>
+                    <Button color="danger" onClick={toEarth}>3D Model</Button>
+                </div>
             </ButtonStyle>
         </>
     )
