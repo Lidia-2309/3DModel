@@ -1,7 +1,8 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei';
+import { Content } from "./styles";
 
 function Model (props) {
     const {scene} = useGLTF("skyHome.glb");
@@ -12,6 +13,7 @@ const EarthPage = () => {
     return (
         <div className="App">
             <div className="App-header">  
+                <Content>
                 <Canvas
                     dpr={[4,8]}
                     shadows camera={{fav:1000}}
@@ -30,6 +32,7 @@ const EarthPage = () => {
                         </Stage>
                     </PresentationControls>
                 </Canvas>
+                </Content>
             </div>
         </div>  
     );
