@@ -15,6 +15,10 @@ export const Menu = () => {
         navigate("/earth")
     }
 
+    const toHero = () => {
+        navigate("/hero")
+    }
+
     return (
         <>
             <ButtonStyle>
@@ -38,7 +42,8 @@ export const Menu = () => {
                 </Navbar>
                 <div className='buttons'>
                     <Button color="danger" onClick={toCube}>Cubo Giratório</Button>
-                    <Button color="danger" onClick={toEarth}>3D Model</Button>
+                    <Button color="danger" onClick={toEarth}>Castelo</Button>
+                    <Button color="danger" onClick={toHero}>Herói</Button>
                 </div>
             </ButtonStyle>
         </>
